@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="./asset/css/base.css">
 
     <!-- Page CSS -->
+    <link rel="stylesheet/less" href="./asset/css/layout/layout.less">
     <link rel="stylesheet/less" href="./asset/css/pages/index.less">
     <link rel="stylesheet/less" href="./asset/css/pages/responsive/index-responsive.less">
+    <link rel="stylesheet/less" href="./asset/css/layout/layout.resp.less">
     <script>
         less = {
           env: "development",
@@ -24,17 +26,22 @@
 <body>
     <div id="app">
         <header id="header">
-            <!-- <div class="container" style="height: 100%;">
-                <nav>
-                    <a href="./web3-personas.html">Web3 Personas</a>
-                    <a href="./index.html">Home</a>
-                    <a href="./meme-generator.html">NFT Generator</a>
-                </nav>
-            </div> -->
             <div class="container">
                 <div class="inner">
-                    <a href="#" class="nav-item home">Home</a>
-                    <a href="./web3-personas.html" class="nav-item">Web3 Personas</a>
+                    <div class="bars-wrapper hide-on-pc">
+                        <button class="mbnav-btn">
+                            <svg class="bars active" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.625 3.5H18.375V5.25H2.625V3.5ZM2.625 9.625H13.125V11.375H2.625V9.625ZM2.625 15.75H18.375V17.5H2.625V15.75Z" fill="white"/>
+                            </svg>
+                            <img src="./asset/images/muns/navv.png" alt="Nav" class="mun">
+                        </button>
+                        <div class="bars-content">
+                            <a href="./index.html" class="bars-link">Home</a>
+                            <a href="./degen.html" class="bars-link active">Degen Analyzer</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item home hide-on-mobile-tablet ">Home</a>
+                    <a href="./web3-personas.html" class="nav-item hide-on-mobile-tablet">Web3 Personas</a>
                     <div class="connects">
                         <!-- <a href="#" class="x">
                             Connect your X
@@ -475,5 +482,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./asset/js/layout.js"></script>
 </body>
 </html>
